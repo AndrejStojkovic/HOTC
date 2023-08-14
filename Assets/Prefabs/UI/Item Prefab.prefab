@@ -353,9 +353,9 @@ RectTransform:
   m_Father: {fileID: 3381388895424454937}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 20.3, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20.3, y: 44.88}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &6930931524481344777
@@ -491,7 +491,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -2, y: 2}
-  m_SizeDelta: {x: 100, y: 75.91}
+  m_SizeDelta: {x: 100, y: 70}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &7065138489819740759
 CanvasRenderer:
@@ -667,18 +667,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2896f2d778d55f74982ad2ad1507d11f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 0}
-  Icon: {fileID: 0}
+  Trap: {fileID: 0}
+  CurrentAmount: 0
   Disabled: 0
-  ReloadCooldownDuration: 1
-  ItemSpawnCooldown: 0
-  ItemSpawnCooldownDuration: 0
-  Amount: 0
-  DamageAmount: 1
-  initialAmount: 0
   IconRef: {fileID: 7647964426478378236}
   WaitRef: {fileID: 8053107761189632174}
   AmountRef: {fileID: 8217744703022706431}
+  KeyRef: {fileID: 2468535475636175682}
 --- !u!1 &8082067844574654518
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,9 +707,9 @@ RectTransform:
   m_Father: {fileID: 3381388895424454937}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 91.08, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 70.78, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &4057904963927437100

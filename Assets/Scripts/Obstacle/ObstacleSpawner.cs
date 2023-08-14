@@ -17,7 +17,7 @@ public class ObstacleSpawner : MonoBehaviour
     }
 
     public void SpawnObstacle(Item item) {
-        if(item.ItemSpawnCooldown && item.LocalStartTime != 0 && gm.GameTime - item.LocalStartTime <= item.ItemSpawnCooldownDuration) {
+        if(item.Trap.UseCooldown > 0f && item.LocalStartTime != 0 && gm.GameTime - item.LocalStartTime <= item.Trap.UseCooldown) {
             // TO-DO
             // Play Error SFX
             return;
@@ -29,13 +29,13 @@ public class ObstacleSpawner : MonoBehaviour
             return;
         }
 
-        if(item.Amount > 0) {
+        if(item.CurrentAmount > 0) {
             Vector3 pos = new Vector3(StartPositionX, gm.Lanes[gm.HandController.CurrentLane], 0f);
-            GameObject obstacle = Instantiate(item.Prefab, pos, Quaternion.identity);
+            GameObject obstacle = Instantiate(item.Trap.Prefab, pos, Quaternion.identity);
             Obstacle ob = obstacle.GetComponent<Obstacle>();
             ob.CurrentLane = gm.HandController.CurrentLane;
-            ob.DamageAmount = item.DamageAmount;
-            item.Amount--;
+            ob.DamageAmount = item.Trap.Damage;
+            item.CurrentAmount--;
             startTime = gm.GameTime;
             item.LocalStartTime = gm.GameTime;
         }

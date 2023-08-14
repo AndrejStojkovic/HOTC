@@ -23,11 +23,12 @@ public class Trap : ScriptableObject
     [Min(0f)]
     public int Amount;
     [Min(0f)]
-    public float Damage;
+    public int Damage;
     [Min(0f)]
     public float UseCooldown;
     [Min(0f)]
     public float ReloadCooldown;
+    public bool Delayed;
 
     [Header("Upgrades")]
     public bool IsUpgradeable;
