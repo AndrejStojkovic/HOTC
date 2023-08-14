@@ -33,20 +33,9 @@ public class ItemManager : MonoBehaviour
             foreach(ItemList item in Items) {
                 if(Input.GetKeyDown(item.Key) && item.Item != null) {
                     ItemSelected?.Invoke(item.Item);
+                    break;
                 }
             }
         }
-
-        // if(Input.GetKeyDown(KeyCode.Q) && Items[0] != null) {
-        //     ItemSelected?.Invoke(Items[0]);
-        // } else if(Input.GetKeyDown(KeyCode.W) && Items[1] != null) {
-        //     ItemSelected?.Invoke(Items[1]);
-        // } else if(Input.GetKeyDown(KeyCode.E) && Items[2] != null) {
-        //     ItemSelected?.Invoke(Items[2]);
-        // } else if(Input.GetKeyDown(KeyCode.R) && Items[3] != null) {
-        //     ItemSelected?.Invoke(Items[3]);
-        // } else if(Input.GetKeyDown(KeyCode.T) && Items[4] != null) {
-        //     ItemSelected?.Invoke(Items[4]);
-        // }
     }
 }
