@@ -19,6 +19,7 @@ public class PlayerHealthIndicator : MonoBehaviour
         heartObjects = new List<GameObject>();
         
         if(HealthParent) {
+            HealthParent.GetComponent<RectTransform>().sizeDelta = new Vector2(PlayerHealth.Hearts / 2.0f, 0.5f);
             for(int i = 0; i < PlayerHealth.Hearts; i++) {
                 GameObject heart = Instantiate(HeartPrefab, new Vector3(0f, 0f, 0f), Quaternion.identity);
                 heart.transform.SetParent(HealthParent.transform, false);
