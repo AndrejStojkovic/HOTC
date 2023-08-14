@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b628bbe8742b6e34e91d659f2a386705, type: 3}
+  m_Name: Spikes
+  m_EditorClassIdentifier: 
+  Name: Spikes
+  Prefab: {fileID: 2448910028720429821, guid: 9cbf5ab65a4f22c469f7a0c3f7717a06, type: 3}
+  Icon: {fileID: 21300000, guid: 53c8b2f6b51679646a6570ddb63e4b26, type: 3}
+  Type: 2
+  Amount: 2
+  Damage: 2
+  UseCooldown: 0
+  ReloadCooldown: 20
+  IsUpgradeable: 0
+  Upgrade: {fileID: 0}
