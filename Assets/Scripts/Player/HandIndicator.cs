@@ -13,6 +13,7 @@ public class HandIndicator : MonoBehaviour
 
     void Start() {
         HandController.OnLaneChange?.AddListener(OnLaneChanged);
+        Indicator.sprite = LaneIndicators[HandController.CurrentLane];
     }
 
     public void OnLaneChanged(int currentLane) {
