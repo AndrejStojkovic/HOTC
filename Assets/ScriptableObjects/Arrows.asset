@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b628bbe8742b6e34e91d659f2a386705, type: 3}
   m_Name: Arrows
   m_EditorClassIdentifier: 
+  Id: 82f3e436-e63c-4b59-bddd-e317adff6d00
   Name: Arrows
   Prefab: {fileID: 2448910028720429821, guid: 03d3517725aae4b4a84254679bd70ae6, type: 3}
   Icon: {fileID: 21300000, guid: 97264f7a07a94d544b0161ea62d92b9a, type: 3}
@@ -20,5 +21,6 @@ MonoBehaviour:
   Damage: 2
   UseCooldown: 2
   ReloadCooldown: 15
+  Delayed: 0
   IsUpgradeable: 0
   Upgrade: {fileID: 0}

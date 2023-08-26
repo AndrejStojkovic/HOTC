@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,9 +11,11 @@ public enum TrapTypes {
     Binding
 }
 
-[CreateAssetMenu()]
+[CreateAssetMenu(fileName = "New Trap", menuName = "HOTC/Trap")]
 public class Trap : ScriptableObject
 {
+    [ScriptableObjectId]
+    public string Id;
     public string Name;
     public GameObject Prefab;
     public Sprite Icon;
@@ -34,4 +37,17 @@ public class Trap : ScriptableObject
     public bool IsUpgradeable;
     [Tooltip("It's only used if the trap is upgradeable.")]
     public Trap Upgrade;
+
+    private void OnValidate() {
+        if(string.IsNullOrWhiteSpace(Id)) {
+            AssignNewID();
+        }
+    }
+
+    public void AssignNewID() {
+        Id = Guid.NewGuid().ToString();
+        #if UNITY_EDITOR
+        UnityEditor.EditorUtility.SetDirty(this);
+        #endif
+    }
 }

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b628bbe8742b6e34e91d659f2a386705, type: 3}
   m_Name: Hole
   m_EditorClassIdentifier: 
+  Id: da3d971a-c6df-4bdd-af0c-0da65b991290
   Name: Hole
   Prefab: {fileID: 2448910028720429821, guid: 925e2d08d0269b147b8c2f6c36fd587e, type: 3}
   Icon: {fileID: 21300000, guid: 6848deb4aa2f2454090be1c8aea153f2, type: 3}
@@ -20,5 +21,6 @@ MonoBehaviour:
   Damage: 1
   UseCooldown: 1
   ReloadCooldown: 5
+  Delayed: 0
   IsUpgradeable: 0
   Upgrade: {fileID: 0}
